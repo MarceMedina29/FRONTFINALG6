@@ -67,7 +67,7 @@ function putCategoria(idDesdeBoton){
 }
 
 function deleteCategoria(idDesdeBoton){
-  
+    console.log(idDesdeBoton);
     let myData={
         id:idDesdeBoton
     };
