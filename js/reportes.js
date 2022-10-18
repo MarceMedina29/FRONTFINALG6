@@ -89,18 +89,9 @@ function pintarClientes(respuesta){
     let myTable = '<table class="table-auto w-full table-center text-center whitespace-w-48">';
     for(let i = 0; i < respuesta.length; i++){
         myTable += "<tr>";
-        myTable += `<td>ID: +${respuesta[i].idClient}+ </td>`
+        myTable += "<td>"+ respuesta[i].client.name+ "</td>"
         myTable += "<tr>"
-        myTable += `<td>Nombre:+${respuesta[i].name}+ </td>`
-        myTable += "<tr>"
-        myTable += `<td>Email:+${respuesta[i].email}+ </td>`
-        myTable += "<tr>"
-        myTable += `<td>Contraseña: +${respuesta[i].password}+ </td>`
-        myTable += "<tr>"
-        myTable += `<td>Edad: +${respuesta[i].age}, </td>`
-        myTable += "<tr>"
-        myTable += `<td>Reservas totales: +${respuesta[i].total}+</td>`
-        myTable += "</tr>";
+        myTable += "<td>"+ respuesta[i].total+ "</td>"
     } 
     myTable += "</table>";
     $("#resultado3").html(myTable);
